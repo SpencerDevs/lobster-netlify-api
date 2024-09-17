@@ -1,3 +1,6 @@
+[build]
+  functions = "netlify/functions"
+
 [[redirects]]
   from = "/decrypt"
   to = "/.netlify/functions/decrypt"
