@@ -28,9 +28,12 @@ const handler: Handler = async (event, context) => {
   }
 };
 
-async function decrypt(source: string) {
-  // Await the async function call
-  return await main(source);
+// async function decrypt(source: string) {
+//   // Await the async function call
+//   return await main(source);
+// }
+async function decrypt(source: string, provider: string) {
+  return await main(provider, source);
 }
 
 export { handler };
