@@ -15,7 +15,7 @@ const main = async (provider, xrax) => {
   const embed_url =
     provider == "rabbit"
       ? "https://rabbitstream.net/v2/embed-4/"
-      : "https://megacloud.tv/embed-1/e-1/";
+      : "https://megacloud.tube/embed-1/e-1/";
   const referrer =
     provider == "rabbit" ? "https://flixhq.to/" : "https://2kmoviehd.to/";
 
@@ -43,7 +43,7 @@ const main = async (provider, xrax) => {
     baseUrl:
       provider == "rabbit"
         ? "https://rabbitstream.net/v2/embed-4/mcAWNPptFcOb?z="
-        : "https://megacloud.tv/embed-1/e-1/POg3BzgJJ55W?z=",
+        : "https://megacloud.tube/embed-1/e-1/POg3BzgJJ55W?z=",
     width: 0,
     height: 0,
     style: {
@@ -70,16 +70,16 @@ const main = async (provider, xrax) => {
     origin:
       provider == "rabbit"
         ? "https://rabbitstream.net"
-        : "https://megacloud.tv",
+        : "https://megacloud.tube",
     location: {
       href:
         provider == "rabbit"
           ? "https://rabbitstream.net/v2/embed-4/mcAWNPptFcOb?z="
-          : "https://megacloud.tv/embed-1/e-1/POg3BzgJJ55W?z=",
+          : "https://megacloud.tube/embed-1/e-1/POg3BzgJJ55W?z=",
       origin:
         provider == "rabbit"
           ? "https://rabbitstream.net"
-          : "https://megacloud.tv",
+          : "https://megacloud.tube",
     },
     performance: {
       timeOrigin: dateNow,
@@ -92,7 +92,7 @@ const main = async (provider, xrax) => {
       src:
         provider == "rabbit"
           ? "https://rabbitstream.net/images/image.png?v=0.1.4"
-          : "https://megacloud.tv/images/image.png?v=0.0.7",
+          : "https://megacloud.tube/images/image.png?v=0.0.7",
       height: 50,
       width: 65,
       complete: true,
@@ -696,7 +696,7 @@ const main = async (provider, xrax) => {
     let wsm =
       provider == "rabbit"
         ? "https://rabbitstream.net/images/loading.png?v=0.6"
-        : "https://megacloud.tv/images/loading.png?v=0.7";
+        : "https://megacloud.tube/images/loading.png?v=0.7";
     let Q0 = await wasmLoader(wsm);
     try {
       wasmLoader.greet();
@@ -733,7 +733,7 @@ const main = async (provider, xrax) => {
     const getSourcesBase =
       provider == "rabbit"
         ? "https://rabbitstream.net/ajax/v2/embed-4/getSources?id="
-        : "https://megacloud.tv/embed-1/ajax/e-1/getSources?id=";
+        : "https://megacloud.tube/embed-1/ajax/e-1/getSources?id=";
     let getSourcesUrl =
       getSourcesBase +
       xrax +
